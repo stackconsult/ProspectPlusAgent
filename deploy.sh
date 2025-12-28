@@ -24,7 +24,8 @@ gcloud run deploy ${SERVICE_NAME} \
   --memory 2Gi \
   --cpu 2 \
   --max-instances 10 \
-  --set-env-vars ENVIRONMENT=production
+  --set-env-vars ENVIRONMENT=production \
+  --logging=CLOUD_LOGGING_ONLY
 
 echo "Deployment complete!"
 echo "Service URL:"
