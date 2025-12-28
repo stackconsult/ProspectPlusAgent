@@ -62,5 +62,5 @@ class InteractionDB(Base):
     prospect_id = Column(String, nullable=False, index=True)
     interaction_type = Column(String(50), nullable=False)
     content = Column(String)
-    metadata = Column(JSON)
+    interaction_metadata = Column(JSON)
     created_at = Column(DateTime(timezone=True), server_default=func.now())

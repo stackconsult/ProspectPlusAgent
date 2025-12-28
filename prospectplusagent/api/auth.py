@@ -3,6 +3,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from datetime import timedelta
+from typing import Optional
 
 from prospectplusagent.models import Token, User, UserInDB
 from prospectplusagent.core.auth import (
